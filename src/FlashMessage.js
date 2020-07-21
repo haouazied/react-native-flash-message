@@ -29,7 +29,7 @@ const MessagePropType = PropTypes.shape({
 /**
  * Non-operation func
  */
-const noop = () => {};
+const noop = () => { };
 
 /**
  * Simple random ID for internal FlashMessage component usage
@@ -204,9 +204,9 @@ export const DefaultFlash = ({
               !!message.backgroundColor
                 ? { backgroundColor: message.backgroundColor }
                 : !!message.type &&
-                  !!FlashMessage.ColorTheme[message.type] && {
-                    backgroundColor: FlashMessage.ColorTheme[message.type],
-                  },
+                !!FlashMessage.ColorTheme[message.type] && {
+                  backgroundColor: FlashMessage.ColorTheme[message.type],
+                },
               style,
             ],
             wrapperInset,
@@ -616,11 +616,11 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   defaultFlash: {
-    justifyContent: "flex-start",
-    paddingVertical: 15,
-    paddingHorizontal: 20,
+    justifyContent: "center",
+    paddingTop: 15,
+    // paddingHorizontal: 20,
     backgroundColor: "#696969",
-    minHeight: OFFSET_HEIGHT,
+    //minHeight: OFFSET_HEIGHT,
   },
   defaultFlashCenter: {
     margin: 44,
