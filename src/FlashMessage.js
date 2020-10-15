@@ -9,7 +9,7 @@ import FlashMessageWrapper, { styleWithInset } from "./FlashMessageWrapper";
 /**
  * MessageComponent `minHeight` property used mainly in vertical transitions
  */
-const OFFSET_HEIGHT = Platform.OS !== "ios" ? 60 : 48;
+const OFFSET_HEIGHT = 0 ;
 
 /**
  * `message` prop it's expected to be some "object"
@@ -616,10 +616,11 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   defaultFlash: {
-    justifyContent: "center",
-    paddingTop: 15,
+    justifyContent: "flex-end",
+    // paddingBottom: 5,
+    // backgroundColor:"red",
     // paddingHorizontal: 20,
-    backgroundColor: "#696969",
+    // backgroundColor: "#696969",
     //minHeight: OFFSET_HEIGHT,
   },
   defaultFlashCenter: {
